@@ -1,5 +1,6 @@
 // Global Mixins
 @use 'common' as *;
+@use 'mixins' as *;
 
 // Global Component Styling
 @use "@/styles/buttons.scss";
@@ -14,17 +15,24 @@ a {
 }
 
 body {
+  position: relative;
+  .bg-video{
+position: fixed;
+top: 0;
+height: 100dvh;
+left: 0;
+  object-fit: contain;
+  z-index: -1;
+  }
   margin: 0;
   background-color: black;
   overflow-x: hidden;
   width: 100vw;
+    background-image: url('/images/bg.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .main {
   min-height: calc(100vh - $bottom-gap);
-  padding: 30px;
-
-  @include Phone {
-    padding: 16px;
-  }
 }
