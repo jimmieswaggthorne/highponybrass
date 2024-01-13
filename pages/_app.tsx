@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>High Pony Brass</title>
         <meta name="description" content="Chicago Based Interdisciplinary performance artist specializing in Burlesque" />
         <link rel="manifest" crossOrigin="use-credentials" href="/manifest.webmanifest" />
-        <meta content="/social.png" name="og:image" />
+        <meta content="/social.jpg" name="og:image" />
         <meta name="theme-color" content="#000000" />
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

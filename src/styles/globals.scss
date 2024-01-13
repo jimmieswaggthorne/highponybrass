@@ -32,6 +32,19 @@ left: 0;
     background-size: cover;
 }
 
+.icon-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  &:hover{
+    background-color: rgba(white, .7);
+  svg path{
+    fill: #FF70AC;
+  }
+}
+}
 .main {
   min-height: calc(100vh - $bottom-gap);
 }
