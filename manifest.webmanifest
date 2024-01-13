@@ -1,17 +1,17 @@
 {
-  "theme_color": "#000000",
+  "theme_color": "#FF70AC",
   "background_color": "#000000",
   "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
-  "name": "Jimmie Swaggthorne Template",
-  "short_name": "Template",
-  "description": "Jimmie Swaggthorne Template",
+  "name": "High Pony Brass by Whimsy Stiff-Richards",
+  "short_name": "High Pony Brass",
+  "description": "High Pony Brass by Whimsy Stiff-Richards",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]
