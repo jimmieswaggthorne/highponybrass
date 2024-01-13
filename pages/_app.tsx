@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>High Pony Brass by Whimsy Stiff-Richards</title>
-        <meta name="description" content="High Pony Brass by Whimsy Stiff-Richards! Dates to be announced soon" />
+        <meta name="description" content="High Pony Brass by Whimsy Stiff-Richards! Dates to be announced soon. Follow @highponybrass for updates" />
         <link rel="manifest" crossOrigin="use-credentials" href="/manifest.webmanifest" />
         <meta content="/social.jpg" name="og:image" />
         <meta name="theme-color" content="#FF70AC" />
