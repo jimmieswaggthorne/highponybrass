@@ -6,6 +6,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 16px;
+  color: black;
+  a{
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+    background-color: $pink;
+    padding:  5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+      height: 35px;
+      box-sizing: border-box;
+      column-gap: 8px;
+        span{
+          display: none;
+        }
+      @include Desktop{
+
+        &:hover{
+          span{display: revert;
+            color: $pink;
+          }
+
+    background-color: rgba(white, .7);
+  svg path{
+    fill: $pink;
+  }
+      }
+  }
+}
+
   @include SparkleBackground;
 border-top: 2px solid white;
 }
