@@ -25,11 +25,13 @@ flex-direction: column;
         width: 100%;
         box-sizing: border-box;
         max-width: 800px;
+        @include NoSelect;
         max-height: 100%;
   }
 }
 
   .bgVideo{
+    @include NoSelect;
     z-index: -1;
 position: absolute;
 top: 0;
@@ -41,7 +43,7 @@ left: 0;
   }
   }
 .whimsy{
-
+@include NoSelect;
 @include TabletDown{
   max-width: 60vw;
   max-height: 500px;
