@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 /**
  * Viewport mixins
  * ---------------
@@ -118,6 +120,11 @@
   }
 }
 
+@mixin PinkMusicBackground{
+  background: linear-gradient(rgba($pink,.7), rgba($pink,.7)), url('/images/music-bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
 // Font related mixins 
 @mixin headerGutterReset {
   margin-block-end: 0em;

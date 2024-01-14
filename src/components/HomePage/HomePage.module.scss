@@ -1,7 +1,6 @@
 @use 'common' as *;
 
 .pinkRow{
-  background-color: $pink;
   min-height: 300px;
   padding: 30px;
   display: flex;
@@ -11,6 +10,8 @@
   @include Phone{
     padding: 16px;
   }
+
+  @include PinkMusicBackground;
 }
 
 .rowBody{
