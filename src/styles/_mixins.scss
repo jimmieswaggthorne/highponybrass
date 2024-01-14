@@ -122,6 +122,7 @@
 
 @mixin PinkMusicBackground{
   background: linear-gradient(rgba($pink,.7), rgba($pink,.7)), url('/images/music-bg.jpg');
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }

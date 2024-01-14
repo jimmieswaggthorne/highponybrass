@@ -17,15 +17,15 @@ const Footer = () => {
   const menuButtonClasses = classNames({ [styles.openMenu]: open })
   return (
     <footer className={styles.footer}>
-      {/* <nav> */}
-      {/* {phone && <a onClick={clickHandler} className={menuButtonClasses}>{open && 'Close '}Menu</a>}
-        {(!phone || open) && <>
-          <Link href="/about">About Whimsy Stiff-Richards</Link>
-          <Link href="/featured-artists">Featured Artists</Link>
-          <Link href="/sponsor-us">Sponsor Us</Link>
-        </>} */}
+      <nav>
+        {/* {phone && <a onClick={clickHandler} className={menuButtonClasses}>{open && 'Close '}Menu</a>}
+        {(!phone || open) && <> */}
+        {/* <Link href="/about">About Whimsy Stiff-Richards</Link>
+          <Link href="/featured-artists">Featured Artists</Link> */}
+        <Link href="/support-us">Support Us</Link>
+        {/* </>} */}
 
-      {/* </nav> */}
+      </nav>
       <div>
         <a href="mailto:highponybrass@whimsystiff.com">
           <EmailIcon />

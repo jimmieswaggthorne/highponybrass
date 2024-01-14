@@ -1,0 +1,40 @@
+@use 'common' as *;
+
+
+.wrap{
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+      overflow-y: hidden;
+  border-bottom: 2px solid white;
+height: 100px;
+.component{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  .logo{
+    height: 100px;
+  }
+}
+
+  .bgVideo{
+    z-index: -1;
+position: absolute;
+top: 0;
+left: 0;
+  object-fit: cover;
+  height: inherit;
+  @include Desktop{
+  width: 100vw;
+  }
+  }
+
+}

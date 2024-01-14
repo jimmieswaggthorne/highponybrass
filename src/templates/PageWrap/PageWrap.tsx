@@ -1,9 +1,14 @@
 import Footer from "@/components/Footer/Footer"
+import Header from "@/components/Header/Header"
+import { useRouter } from "next/router"
 
 const PageWrap = ({ children }) => {
+  const router = useRouter()
   return (
     <>
-      <header></header>
+      {router.pathname !== '/' &&
+        <Header />
+      }
       <main className='main'>
         {children}
       </main>
