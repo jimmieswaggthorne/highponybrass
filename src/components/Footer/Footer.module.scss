@@ -2,13 +2,44 @@
 
 
 .footer{
+  @include Desktop{
   height: $footer-height;
+  }
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100vw;
   align-items: center;
   column-gap: 16px;
+  padding:  16px;
+  box-sizing: border-box;
   color: black;
+      @include Phone{
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  > div, nav{
+    width: 100%;
+    display: flex;
+      column-gap: 16px;
+  }
+  >div{
+    @include Phone{
+      justify-content: center;
+    }
+  }
+  nav{
+    @include Phone{
+      flex-direction: column;
+      row-gap: 8px;
+    }
+  }
   a{
+
+    &.openMenu{
+background-color: white;
+color: $pink;
+border: 2px solid $pink;
+    }
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -24,9 +55,8 @@
         span{
           display: none;
         }
-      @include Desktop{
-
-        &:hover{
+ &:hover{
+           color: $pink;
           span{display: revert;
             color: $pink;
           }
@@ -36,7 +66,6 @@
     fill: $pink;
   }
       }
-  }
 }
 
   @include SparkleBackground;
