@@ -36,9 +36,8 @@ const promptOptions = {
 
 const useNotification = () => {
 
-
-  async function runOneSignal() {
-    await OneSignal.init(promptOptions)
+  function runOneSignal() {
+    OneSignal.init(promptOptions)
       .then(() => {
         return OneSignal.Slidedown.promptPush();
       });

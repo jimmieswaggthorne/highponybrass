@@ -9,8 +9,14 @@
   "description": "High Pony Brass by Whimsy Stiff-Richards! Dates to be announced soon. Follow @highponybrass for updates",
   "icons": [
     {
+      "src": "/images/logo-only.png",
+      "sizes": "512x512 144x144 64x64 32x32 24x24 16x16",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
       "src": "favicon.png",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "424x24 16x16",
       "type": "image/png",
       "purpose": "any maskable"
     }
