@@ -9,6 +9,8 @@
   }
 }
 
+
+
 @mixin PhoneHorizontal {
   @media screen and (max-width: 767px) and (orientation: landscape) {
     $footer-height: 300px !important;
@@ -120,6 +122,12 @@
 @mixin headerGutterReset {
   margin-block-end: 0em;
   margin-block-start: 0em;
+}
+
+@mixin SparkleBackground {
+  background-image: url('/images/bg.png');
+  background-position: center;
+  background-size: cover;
 }
 
 

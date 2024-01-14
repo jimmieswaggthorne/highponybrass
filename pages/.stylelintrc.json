@@ -1,0 +1,32 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order"
+  ],
+  "rules": {
+    "rule-empty-line-before": ["always", {
+      "except": [
+        "after-single-line-comment",
+        "first-nested"
+      ]
+    }],
+    "at-rule-empty-line-before": ["always", {
+      "except": [
+        "blockless-after-same-name-blockless",
+        "first-nested"
+      ],
+      "ignore": [
+        "after-comment"
+      ]
+    }],
+    "block-opening-brace-space-before": "always",
+    "indentation": 2,
+    "order/properties-alphabetical-order": "true"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
+  ]
+}

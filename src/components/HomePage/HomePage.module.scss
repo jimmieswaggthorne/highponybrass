@@ -1,0 +1,26 @@
+@use 'common' as *;
+
+.pinkRow{
+  background-color: $pink;
+  min-height: 300px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  @include Phone{
+    padding: 16px;
+  }
+}
+
+.rowBody{
+  max-width: 900px;
+  width: 100%;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+      color: white;
+      h1{
+        text-align: center;
+      }
+}

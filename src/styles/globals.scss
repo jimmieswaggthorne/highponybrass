@@ -10,32 +10,24 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h1,h2,h3,h4,h5{
+    @include font-regular;
+}
+
 a {
   text-decoration: none;
 }
 
 body {
-  position: relative;
-  .bg-video{
-position: fixed;
-top: 0;
-height: 100dvh;
-left: 0;
-  object-fit: contain;
-  }
   margin: 0;
-  background-color: black;
-  overflow-x: hidden;
-  width: 100vw;
-    background-image: url('/images/bg.png');
-    background-position: center;
-    background-size: cover;
+  background-color: $pink;
 }
 
 .icon-button{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $pink;
   padding: 5px;
   border-radius: 5px;
   &:hover{
@@ -46,5 +38,6 @@ left: 0;
 }
 }
 .main {
-  min-height: calc(100vh - $bottom-gap);
+  min-height: calc(100vh - $bottom-gap - $footer-height);
 }
+

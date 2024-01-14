@@ -1,0 +1,9 @@
+@font-face {
+  font-display: swap;
+  font-family: "Bhineka";
+  src: url("/fonts/Bhineka.ttf"), url("/fonts/Bhineka.otf");
+}
+
+@mixin font-regular {
+  font-family: "Bhineka", sans-serif ;
+}
