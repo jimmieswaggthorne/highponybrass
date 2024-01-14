@@ -13,9 +13,10 @@ const promptOptions = {
         {
           type: 'push', // current types are "push" & "category"
           autoPrompt: true,
+          force: true,
           text: {
             /* limited to 90 characters */
-            actionMessage: ' Want to stay up to date? Subscribe and be the first to hear new cities and new dates!',
+            actionMessage: 'Want to stay up to date? Subscribe and be the first to hear new cities and new dates!',
             /* acceptButton limited to 15 characters */
             acceptButton: 'Subscribe',
             /* cancelButton limited to 15 characters */
