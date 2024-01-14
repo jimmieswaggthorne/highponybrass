@@ -1,6 +1,5 @@
 // Global Mixins
 @use 'common' as *;
-@use 'mixins' as *;
 
 // Global Component Styling
 @use "@/styles/buttons.scss";
@@ -21,6 +20,7 @@ a {
 
 body {
   margin: 0;
+  @include PinkMusicBackground;
   background-color: $pink;
 }
 
