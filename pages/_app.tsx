@@ -2,14 +2,17 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 import '../src/styles/globals.scss'
 import type { AppProps } from 'next/app';
+import useNotification from '@/hooks/useNotifications';
 
 function MyApp({ Component, pageProps }: AppProps) {
 
+  const { runOneSignal } = useNotification()
 
   useEffect(() => {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js');
     }
+    runOneSignal()
   }, []);
 
   return (
