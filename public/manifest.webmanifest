@@ -12,7 +12,13 @@
       "src": "/images/icon.png",
       "sizes": "512x512 144x144 64x64 32x32 24x24",
       "type": "image/png",
-      "purpose": "maskable any"
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/icon-no-mask.png",
+      "sizes": "512x512 144x144 64x64 32x32 24x24",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "favicon.png",
