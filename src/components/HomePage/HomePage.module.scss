@@ -28,7 +28,7 @@
 .passingLayer{
   min-height: 400px;
   border-top: 2px solid white;
-  background: linear-gradient(rgba($pink,.2), rgba($pink,0)), url('/images/whimsy-bg.jpg');
+  background: linear-gradient(rgba($pink,.6), transparent, rgba($purple,.6)), url('/images/whimsy-bg.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
