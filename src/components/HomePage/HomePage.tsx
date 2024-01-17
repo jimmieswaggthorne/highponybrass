@@ -9,7 +9,7 @@ const HomePage = () => {
       <TeaserPage />
       <div className={styles.pinkRow}>
         <div className={styles.rowBody}>
-          <h2>About</h2>
+          <h1>About</h1>
           <p>
             High Pony Brass is a high energy, high camp, and high production cover concert celebrating the music of the Pop & R&B princess herself, Ariana Grande.
           </p>
