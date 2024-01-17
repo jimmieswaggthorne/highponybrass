@@ -1,3 +1,4 @@
+import ShowList from '../ShowList/ShowList'
 import TeaserPage from '../TeaserPage/TeaserPage'
 import styles from './HomePage.module.scss'
 
@@ -8,7 +9,7 @@ const HomePage = () => {
       <TeaserPage />
       <div className={styles.pinkRow}>
         <div className={styles.rowBody}>
-          <h1>About</h1>
+          <h2>About</h2>
           <p>
             High Pony Brass is a high energy, high camp, and high production cover concert celebrating the music of the Pop & R&B princess herself, Ariana Grande.
           </p>
@@ -20,6 +21,8 @@ const HomePage = () => {
           </p>
         </div>
       </div>
+      <div className={styles.passingLayer} />
+      <ShowList />
     </div>
   )
 }

@@ -1,0 +1,86 @@
+@use 'common' as *;
+.wrap{
+@include BarWrap;
+  @include PurpleMusicBackground;
+}
+
+.body{
+@include BodyWrap;
+
+p{
+  border: 2px solid white;
+  background-color: $purple;
+  padding: 16px;
+  border-radius: 5px;
+  a{
+    text-decoration: underline;
+    &:hover{
+      color:rgba(white, .7);
+    }
+  }
+}
+}
+
+.list{
+  @include clear-list-properties;
+  padding-top: 16px;
+  border-top:  2px solid white;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin: 32px 0;
+}
+
+.show{
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  row-gap: 8px;
+
+@include Desktop{
+    flex-direction: row;
+}
+  flex-direction: column;
+  border-bottom: 2px solid white;
+  padding-bottom: 16px;
+
+.location{
+  @include Desktop{
+    width: 40%;
+  }
+
+  font-size: 28px;
+}
+
+.city{
+  @include Desktop{
+    width: 20%;
+  }
+
+}
+
+  .date{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8px;
+  @include Desktop{
+    width: 40%;
+
+  }
+  }
+}
+
+.highlight{
+  background-color: $pink;
+  font-weight: bolder;
+  width: max-content;
+  padding: 2px 5px;
+  border-radius: 5px;
+    margin: 0 4px;
+  @include Desktop{
+  margin: 4px 0;
+  }
+}
+

@@ -1,12 +1,11 @@
 @use 'common' as *;
 
 .pinkRow{
-  min-height: 300px;
+  min-height: 400px;
   height: auto;
   padding: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
   box-sizing: border-box;
   @include Phone{
     padding: 16px;
@@ -18,9 +17,19 @@
   width: 100%;
   min-height: inherit;
   display: flex;
+  justify-content: center;
   flex-direction: column;
       color: white;
-      h1{
+     h2, h1{
         text-align: center;
       }
+}
+
+.passingLayer{
+  min-height: 400px;
+  border-top: 2px solid white;
+  background: linear-gradient(rgba($pink,.2), rgba($pink,0)), url('/images/whimsy-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }

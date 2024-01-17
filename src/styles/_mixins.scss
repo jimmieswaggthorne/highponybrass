@@ -1,4 +1,5 @@
 @use 'colors' as *;
+@use 'variables' as *;
 
 /**
  * Viewport mixins
@@ -120,8 +121,43 @@
   }
 }
 
+@mixin BarWrap{
+  min-height: 400px;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+    border-top: 2px solid white;
+  @include Phone{
+    padding: 16px;
+  }
+}
+
+@mixin BodyWrap{
+  max-width: $max-width;
+  width: 100%;
+
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+      color: white;
+      h2,h1{
+        text-align: center;
+      }
+}
+
 @mixin PinkMusicBackground{
   background: linear-gradient(rgba($pink,.7), rgba($pink,.7)), url('/images/music-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin PurpleMusicBackground{
+  background: linear-gradient(rgba(#cc75ff,.7), rgba(#cc75ff,.7)), url('/images/bg-lav-music.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
