@@ -75,3 +75,21 @@ border: 2px solid $pink;
   @include SparkleBackground;
 border-top: 2px solid white;
 }
+
+.qcButton{
+  background-color: transparent;
+  border: none;
+width: max-content;
+  white-space: nowrap;
+  background-color: $pink;
+  font-size: 16px;
+  border-radius: 8px;
+   &:hover{
+           color: $pink;
+          span{display: revert;
+            color: $pink;
+          }
+
+    background-color: rgba(white, .7);
+        }
+}

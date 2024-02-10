@@ -4,16 +4,22 @@ import Link from "next/link"
 import { useState } from "react"
 import useViewport from "@/hooks/useViewport"
 import classNames from "classnames"
+import { useRouter } from "next/router"
 
 const Footer = () => {
   const [open, setOpen] = useState(false)
   const { phone } = useViewport()
+  const router = useRouter()
 
   const clickHandler = (e) => {
     e.preventDefault();
     setOpen(!open)
   }
 
+  const navigateToQC = (e) => {
+    e.preventDefault()
+    router.push('https://queercoded.events/')
+  }
   const menuButtonClasses = classNames({ [styles.openMenu]: open })
   return (
     <footer className={styles.footer}>
@@ -26,6 +32,9 @@ const Footer = () => {
         {/* </>} */}
 
       </nav>
+      <button onClick={navigateToQC} className={styles.qcButton}>
+        Brought to you by QueerCoded Productions
+      </button>
       <div>
         <a href="mailto:highponybrass@whimsystiff.com">
           <EmailIcon />
