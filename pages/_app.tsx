@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import '../src/styles/globals.scss'
 import type { AppProps } from 'next/app';
 import useNotification from '@/hooks/useNotifications';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -29,6 +30,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image/png" href="favicon.png" />
       </Head>
       <Component {...pageProps} />
+      <Script id="signupVariable">
+        {'var _ctct_m="1b34bf71bd3edae68471d7995adbe72a";'}
+      </Script>
+      <Script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></Script>
     </>
   )
 }
