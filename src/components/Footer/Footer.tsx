@@ -28,14 +28,6 @@ const Footer = () => {
         {(!phone || open) && <> */}
         {/* <Link href="/about">About Whimsy Stiff-Richards</Link>
           <Link href="/featured-artists">Featured Artists</Link> */}
-        <Link href="/support-us">Support Us</Link>
-        {/* </>} */}
-
-      </nav>
-      <button onClick={navigateToQC} className={styles.qcButton}>
-        Brought to you by QueerCoded Productions
-      </button>
-      <div>
         <a href="mailto:highponybrass@whimsystiff.com">
           <EmailIcon />
           <span>highponybrass@whimsystiff.com</span>
@@ -44,6 +36,14 @@ const Footer = () => {
           <InstagramIcon />
           <span>@highponybrass</span>
         </a>
+        <Link href="/support-us">Support Us</Link>
+        {/* </>} */}
+
+      </nav>
+      <button onClick={navigateToQC} className={styles.qcButton}>
+        Brought to you by QueerCoded Productions
+      </button>
+      <div>
       </div >
     </footer>
 
