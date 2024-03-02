@@ -37,15 +37,8 @@ body {
   background-color: $pink;
   min-height: 100vh;
   padding: 0;
-
-  @include Phone {
-    ::-webkit-scrollbar {
-      -webkit-appearance: none;
-    }
-  }
-
-  // overflow-x: hidden;
 }
+
 
 .main {
   max-width: $max-body-width;
