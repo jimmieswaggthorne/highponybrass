@@ -153,10 +153,10 @@
 }
 
 @mixin DefaultMin {
-  min-height: calc(100vw * 9 / 16);
+  aspect-ratio: 16/9;
 
   @include TabletDown {
-    min-height: 100vh;
+    aspect-ratio: 9/16;
   }
 }
 

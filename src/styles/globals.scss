@@ -41,8 +41,5 @@ body {
 
 
 .main {
-  max-width: $max-body-width;
   min-height: calc(100vh - $bottom-gap - $footer-height - 100px);
-  display: flex;
-  flex-direction: horizontal;
 }
