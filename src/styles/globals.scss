@@ -37,7 +37,14 @@ body {
   background-color: $pink;
   min-height: 100vh;
   padding: 0;
-  overflow-x: hidden;
+
+  @include Phone {
+    ::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+  }
+
+  // overflow-x: hidden;
 }
 
 .main {
