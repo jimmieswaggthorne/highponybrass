@@ -1,95 +1,113 @@
 @use "common" as *;
 
 
-.footer{
-  @include Desktop{
-  height: $footer-height;
+.footer {
+  @include Desktop {
+    height: $footer-height;
   }
+
   display: flex;
   justify-content: space-between;
   width: 100vw;
   align-items: center;
   column-gap: 16px;
-  padding:  16px;
+  padding: 16px;
   box-sizing: border-box;
   color: black;
-      @include Phone{
-      flex-direction: column;
-      row-gap: 24px;
-    }
-  > div, > nav{
+
+  @include Phone {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  >div,
+  >nav {
     width: 50%;
     display: flex;
     flex-direction: row;
-      column-gap: 16px;
+    column-gap: .5em;
   }
-  >div{
+
+  >div {
     justify-content: flex-end;
     align-items: center;
-    @include Phone{
+
+    @include Phone {
       justify-content: center;
     }
   }
-  nav{
+
+  nav {
     justify-content: flex-start;
-    @include Phone{
+
+    @include Phone {
       flex-direction: column;
       row-gap: 8px;
     }
   }
-  a{
 
-    &.openMenu{
-background-color: white;
-color: $pink;
-border: 2px solid $pink;
+  a {
+
+    &.openMenu {
+      background-color: white;
+      color: $pink;
+      border: 2px solid $pink;
     }
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 
     background-color: $pink;
-    padding:  5px;
+    padding: 5px;
     border-radius: 5px;
     display: flex;
     align-items: center;
-      height: 35px;
-      box-sizing: border-box;
-      column-gap: 8px;
-        span{
-          display: none;
-        }
- &:hover{
-           color: $pink;
-          span{display: revert;
-            color: $pink;
-          }
+    height: 35px;
+    box-sizing: border-box;
+    column-gap: 8px;
 
-    background-color: rgba(white, .7);
-  svg path{
-    fill: $pink;
-  }
+    span {
+      display: none;
+    }
+
+    &:hover {
+      color: $pink;
+
+      span {
+        display: revert;
+        color: $pink;
       }
-}
+
+      background-color: rgba(white, .7);
+
+      svg path {
+        fill: $pink;
+      }
+    }
+  }
 
   @include SparkleBackground;
-border-top: 2px solid white;
+  border-top: 2px solid white;
 }
 
-.qcButton{
+.qcButton {
   background-color: transparent;
   border: none;
-width: max-content;
+  width: max-content;
   white-space: nowrap;
   background-color: $pink;
   font-size: 16px;
   border-radius: 8px;
-   &:hover{
-           color: $pink;
-          span{display: revert;
-            color: $pink;
-          }
+
+  &:hover {
+    color: $pink;
+
+    span {
+      display: revert;
+      color: $pink;
+    }
 
     background-color: rgba(white, .7);
-        }
+  }
 }
