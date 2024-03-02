@@ -27,6 +27,20 @@
   }
 }
 
+.featuredButton {
+  width: max-content;
+  background-color: $pink;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 1em;
+
+  &:hover {
+    background-color: rgba($pink, .8)
+  }
+}
+
 .whimsy {
   @include DefaultMin;
   width: 100%;

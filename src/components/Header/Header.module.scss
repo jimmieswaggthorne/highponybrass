@@ -3,17 +3,16 @@
 
 .wrap {
   display: flex;
-  position: sticky;
-  top: 0;
-  left: 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
-  width: 100vw;
+  width: $max-body-width;
+  overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 2px solid white;
   height: 100px;
+  z-index: 2;
 
   .component {
     display: flex;

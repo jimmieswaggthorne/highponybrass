@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import FeaturedGuests from '../FeaturedGuests/FeaturedGuests'
 import ShowList from '../ShowList/ShowList'
 import Sponsors from '../Sponsors/Sponsors'
@@ -5,6 +6,11 @@ import TeaserPage from '../TeaserPage/TeaserPage'
 import styles from './HomePage.module.scss'
 
 const HomePage = () => {
+  const router = useRouter()
+  const featuredClickHandler = (e) => {
+    e.preventDefault()
+    router.push('/featured-artists')
+  }
 
   return (
     <div className={styles.body}>
@@ -21,6 +27,7 @@ const HomePage = () => {
           <p>
             What would a concert built for a pop princess be without an ensemble? Enjoy backup dancing and unique interactive opportunities with Whimsy's signature Bunnys! Don't forget our featured fan favorites on Ari's hot tracks like Iggy Azalea and Nathan Sykes! Enjoy guest collaborators playing their own instruments!
           </p>
+          <button className={styles.featuredButton} onClick={featuredClickHandler}>View our featured artists</button>
         </div>
         <a className={styles.photoCredit} href="https://www.genitophoto.com/" target="_blank">Photo by Genito Photography</a>
       </div>

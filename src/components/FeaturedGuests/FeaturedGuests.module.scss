@@ -41,3 +41,21 @@
     width: 100vw
   }
 }
+
+
+.graham {
+  @include DefaultMin;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  @include GrahamBackground;
+  padding: 60px 30px;
+
+  @include Phone {
+    padding: 16px;
+    width: 100vw
+  }
+}

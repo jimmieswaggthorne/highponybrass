@@ -171,6 +171,14 @@
   background-attachment: fixed;
 }
 
+@mixin GrahamBackground {
+  background-image: url('/images/graham-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  background-attachment: fixed;
+}
+
 @mixin MandynBackground {
   background-image: url('/images/mandyn-banner.jpg');
   background-repeat: no-repeat;
