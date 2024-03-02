@@ -1,0 +1,10 @@
+@use 'common' as *;
+
+.body {
+  width: 100%;
+  padding: 60px 30px;
+
+  @include Phone {
+    padding: 16px;
+  }
+}

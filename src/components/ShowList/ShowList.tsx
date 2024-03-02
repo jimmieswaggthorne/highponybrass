@@ -3,6 +3,9 @@ import styles from './ShowList.module.scss'
 const ShowList = () => {
   return (
     <div className={styles.wrap}>
+      <img src="/images/whimsy.png" className={styles.whimsy} alt="Whimsy Stiff-Richards" />
+      <img src="/images/whimsy.png" className={`${styles.whimsy} ${styles.right}`} alt="Whimsy Stiff-Richards" />
+
       <div className={styles.body}>
         <h2>Upcoming Shows</h2>
         <p>We are excited to be kicking this show off local to Chicago before expanding to other cities in the midwest! Check out some of the dates we currently have planned below.</p>

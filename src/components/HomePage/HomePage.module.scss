@@ -33,6 +33,7 @@
   width: 100%;
   height: auto;
   display: flex;
+  position: relative;
   justify-content: flex-start;
   box-sizing: border-box;
   @include WhimsyBackground;
@@ -47,5 +48,16 @@
     @include Desktop {
       width: 50%;
     }
+  }
+}
+
+.photoCredit {
+  color: rgba(white, .8);
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+
+  &:hover {
+    color: white;
   }
 }

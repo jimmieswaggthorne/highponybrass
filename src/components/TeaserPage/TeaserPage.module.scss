@@ -47,32 +47,4 @@
       width: 100vw;
     }
   }
-
-  .whimsy {
-    @include NoSelect;
-
-    @include TabletDown {
-      max-width: 60vw;
-      max-height: 500px;
-
-      &.right {
-        display: none;
-      }
-    }
-
-    @include Desktop {
-      height: 500px;
-
-      position: absolute;
-      left: 10px;
-      bottom: 0;
-
-      &.right {
-        left: auto;
-        right: 10px;
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-      }
-    }
-  }
 }

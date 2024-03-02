@@ -1,4 +1,5 @@
 import ShowList from '../ShowList/ShowList'
+import Sponsors from '../Sponsors/Sponsors'
 import TeaserPage from '../TeaserPage/TeaserPage'
 import styles from './HomePage.module.scss'
 
@@ -20,9 +21,10 @@ const HomePage = () => {
             What would a concert built for a pop princess be without an ensemble? Enjoy backup dancing and unique interactive opportunities with Whimsy's signature Bunnys! Don't forget our featured fan favorites on Ari's hot tracks like Iggy Azalea and Nathan Sykes! Enjoy guest collaborators playing their own instruments!
           </p>
         </div>
+        <a className={styles.photoCredit} href="https://www.genitophoto.com/" target="_blank">Photo by Genito Photography</a>
       </div>
       <ShowList />
-      <div className={styles.passingLayer} />
+      {/* <Sponsors /> */}
     </div>
   )
 }

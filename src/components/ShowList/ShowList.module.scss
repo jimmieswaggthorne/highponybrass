@@ -4,6 +4,28 @@
   @include BarWrap;
   @include PassingLayer;
   @include DefaultMin;
+  position: relative;
+
+  .whimsy {
+    @include NoSelect;
+
+    display: none;
+
+    @include DesktopXL {
+      height: 700px;
+      display: unset;
+      position: absolute;
+      left: calc(50vw - 720px);
+      bottom: 0;
+
+      &.right {
+        left: auto;
+        right: calc(50vw - 720px);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    }
+  }
 }
 
 .body {

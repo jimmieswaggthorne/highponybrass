@@ -153,11 +153,7 @@
 }
 
 @mixin DefaultMin {
-  aspect-ratio: 16/9;
-
-  @include TabletDown {
-    aspect-ratio: 9/16;
-  }
+  min-height: 100vh;
 }
 
 @mixin PinkMusicBackground {
