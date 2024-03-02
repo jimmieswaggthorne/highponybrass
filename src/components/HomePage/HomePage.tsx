@@ -1,3 +1,4 @@
+import FeaturedGuests from '../FeaturedGuests/FeaturedGuests'
 import ShowList from '../ShowList/ShowList'
 import Sponsors from '../Sponsors/Sponsors'
 import TeaserPage from '../TeaserPage/TeaserPage'
@@ -8,7 +9,7 @@ const HomePage = () => {
   return (
     <div className={styles.body}>
       <TeaserPage />
-      <div className={styles.pinkRow}>
+      <div className={styles.whimsy}>
         <div className={styles.rowBody}>
           <h1>What is High Pony Brass?</h1>
           <p>
@@ -24,6 +25,7 @@ const HomePage = () => {
         <a className={styles.photoCredit} href="https://www.genitophoto.com/" target="_blank">Photo by Genito Photography</a>
       </div>
       <ShowList />
+      {/* <FeaturedGuests /> */}
       {/* <Sponsors /> */}
     </div>
   )
