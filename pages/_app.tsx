@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>High Pony Brass by Whimsy Stiff-Richards</title>
-        <meta name="description" content="High Pony Brass by Whimsy Stiff-Richards! Dates to be announced soon. Follow @highponybrass for updates" />
+        <meta name="description" content="High Pony Brass is a high energy, high camp, and high production cover concert celebrating the music of the Pop & R&B princess herself, Ariana Grande." />
         <link rel="manifest" crossOrigin="use-credentials" href="manifest.webmanifest" />
         <meta content="/social.jpg" name="og:image" />
         <meta name="theme-color" content="#FF70AC" />
