@@ -1,68 +1,78 @@
 @use 'common' as *;
-.wrap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-flex-direction: column;
-  box-sizing: border-box;
-  width: 100%;
-  position: relative;
-      overflow-y: hidden;
-  border-bottom: 2px solid white;
-  @include Desktop{
 
-    box-sizing: border-box;
-    height: 600px;
-  }
-.component{
+.wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
   box-sizing: border-box;
-  .logo{
-        width: 100%;
-        box-sizing: border-box;
-        max-width: 800px;
-        @include NoSelect;
-        max-height: 100%;
-  }
-}
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid white;
+  @include DefaultMin;
 
-  .bgVideo{
+  @include Desktop {
+    box-sizing: border-box;
+    max-width: calc(100vw - calc(100vw - 100%));
+  }
+
+  .component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+
+    .logo {
+      width: 100%;
+      box-sizing: border-box;
+      max-width: 800px;
+      @include NoSelect;
+      max-height: 100%;
+    }
+  }
+
+  .bgVideo {
     @include NoSelect;
     z-index: -1;
-position: absolute;
-top: 0;
-left: 0;
-  object-fit: cover;
-  height: inherit;
-  @include Desktop{
-  width: 100vw;
-  }
-  }
-.whimsy{
-@include NoSelect;
-@include TabletDown{
-  max-width: 60vw;
-  max-height: 500px;
-&.right{
-  display: none;
-}
-}
-  @include Desktop{
-  height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: inherit;
 
-  position: absolute;
-  left: 10px;
-  bottom: 0;
-  &.right{
-      left: auto;
-  right: 10px;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+    @include Desktop {
+      width: 100vw;
+    }
   }
+
+  .whimsy {
+    @include NoSelect;
+
+    @include TabletDown {
+      max-width: 60vw;
+      max-height: 500px;
+
+      &.right {
+        display: none;
+      }
+    }
+
+    @include Desktop {
+      height: 500px;
+
+      position: absolute;
+      left: 10px;
+      bottom: 0;
+
+      &.right {
+        left: auto;
+        right: 10px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    }
   }
-}
 }

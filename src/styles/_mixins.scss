@@ -121,7 +121,7 @@
   }
 }
 
-@mixin BarWrap{
+@mixin BarWrap {
   min-height: 400px;
   height: auto;
   padding: 30px;
@@ -129,13 +129,14 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-    border-top: 2px solid white;
-  @include Phone{
+  border-top: 2px solid white;
+
+  @include Phone {
     padding: 16px;
   }
 }
 
-@mixin BodyWrap{
+@mixin BodyWrap {
   max-width: $max-width;
   width: 100%;
 
@@ -143,25 +144,52 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-      color: white;
-      h2,h1{
-        text-align: center;
-      }
+  color: white;
+
+  h2,
+  h1 {
+    text-align: center;
+  }
 }
 
-@mixin PinkMusicBackground{
-  background: linear-gradient(rgba($pink,.7), rgba($pink,.7)), url('/images/music-bg.jpg');
+@mixin DefaultMin {
+  min-height: calc(100vw * 9 / 16);
+
+  @include TabletDown {
+    min-height: 100vh;
+  }
+}
+
+@mixin PinkMusicBackground {
+  background: linear-gradient(rgba($pink, .7), rgba($pink, .7)), url('/images/music-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-@mixin PurpleMusicBackground{
-  background: linear-gradient(rgba(#cc75ff,.7), rgba(#cc75ff,.7)), url('/images/bg-lav-music.jpg');
+@mixin WhimsyBackground {
+  background-image: url('/images/whimsybanner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  background-attachment: fixed;
+}
+
+@mixin PurpleMusicBackground {
+  background: linear-gradient(rgba(#cc75ff, .7), rgba(#cc75ff, .7)), url('/images/bg-lav-music.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+@mixin PassingLayer {
+  border-top: 2px solid white;
+  background: linear-gradient(rgba($pink, .6), transparent, rgba($purple, .6)), url('/images/whimsy-bg.jpg');
+  background-position: left;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 // Font related mixins 
 @mixin headerGutterReset {
   margin-block-end: 0em;

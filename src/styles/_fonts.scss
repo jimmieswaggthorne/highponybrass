@@ -5,5 +5,7 @@
 }
 
 @mixin font-regular {
-  font-family: "Bhineka", sans-serif ;
+  font-family: "Bhineka", sans-serif;
+  font-weight: lighter;
+  letter-spacing: .3rem;
 }
