@@ -36,15 +36,12 @@ const Footer = () => {
           <InstagramIcon />
           <span>@highponybrass</span>
         </a>
-        <Link href="/support-us">Support Us</Link>
         {/* </>} */}
 
       </nav>
       <button onClick={navigateToQC} className={styles.qcButton}>
-        Brought to you by QueerCoded Productions
+        Brought to you by QueerCoded
       </button>
-      <div>
-      </div >
     </footer>
 
   )

@@ -17,9 +17,9 @@
   color: black;
 
   @include Phone {
-    flex-direction: column;
-    row-gap: 24px;
+    column-gap: .5em;
   }
+
 
   >div,
   >nav {
@@ -41,12 +41,6 @@
 
   nav {
     justify-content: flex-start;
-
-    @include Phone {
-      flex-direction: column;
-      row-gap: 8px;
-      width: 100%;
-    }
   }
 
   a {
@@ -80,6 +74,10 @@
       span {
         display: revert;
         color: $pink;
+
+        @include Phone {
+          display: none;
+        }
       }
 
       background-color: rgba(white, .7);
@@ -101,7 +99,7 @@
   white-space: nowrap;
   background-color: $pink;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 5px;
 
   &:hover {
     color: $pink;
