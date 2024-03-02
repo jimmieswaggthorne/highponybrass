@@ -169,6 +169,10 @@
   background-size: cover;
   background-position: center right;
   background-attachment: fixed;
+
+  @include Phone {
+    background-position: center right -100px;
+  }
 }
 
 @mixin GrahamBackground {
@@ -176,6 +180,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
+
+  @include Phone {
+    background-position: center right -300px;
+  }
+
   background-attachment: fixed;
 }
 
@@ -185,6 +194,11 @@
   background-size: cover;
   background-position: center left;
   background-attachment: fixed;
+
+
+  @include Phone {
+    background-position: center left -100px;
+  }
 }
 
 @mixin PurpleMusicBackground {
