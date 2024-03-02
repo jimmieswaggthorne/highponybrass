@@ -173,6 +173,8 @@
   background-size: cover;
   background-position: center right;
   background-attachment: fixed;
+  background-origin: border-box;
+
 }
 
 @mixin PurpleMusicBackground {
