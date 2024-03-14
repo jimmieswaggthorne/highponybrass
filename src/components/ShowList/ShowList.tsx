@@ -12,18 +12,18 @@ const ShowList = () => {
         <ul className={styles.list}>
           <li>
             <a href="https://ticketscandy.com/e/high-pony-brass-4438" target="_blank">
-            <div className={styles.show}>
-              <div className={styles.location}>
-                <h3>Three Brothers Theatre</h3>
+              <div className={styles.show}>
+                <div className={styles.location}>
+                  <h3>Three Brothers Theatre</h3>
+                </div>
+                <div className={styles.city}>
+                  Waukegan, IL
+                </div>
+                <div className={styles.date}>
+                  April 13th at 7:00PM <span className={styles.highlight}>All Ages Welcome!</span>
+                </div>
               </div>
-              <div className={styles.city}>
-                Waukegan, IL
-              </div>
-              <div className={styles.date}>
-                April 13th at 7:00PM <span className={styles.highlight}>All Ages Welcome!</span>
-              </div>
-            </div>
-              </a>
+            </a>
           </li>
           <li>
             <div className={styles.show}>
