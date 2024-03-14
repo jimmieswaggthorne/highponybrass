@@ -41,17 +41,19 @@ const ShowList = () => {
             </a>
           </li>
           <li>
-            <div className={styles.show}>
-              <div className={styles.location}>
-                <h3>The Baton Show Lounge</h3>
+            <a href="https://ticketscandy.com/e/high-pony-brass-arianas-birthday-edition-4439" target="_blank">
+              <div className={styles.show}>
+                <div className={styles.location}>
+                  <h3>The Baton Show Lounge</h3>
+                </div>
+                <div className={styles.city}>
+                  Chicago, IL
+                </div>
+                <div className={styles.date}>
+                  April 26th at 7PM <span className={styles.highlight}>Celebrate Ariana Grande's Birthday!</span>
+                </div>
               </div>
-              <div className={styles.city}>
-                Chicago, IL
-              </div>
-              <div className={styles.date}>
-                April 26th at 7PM <span className={styles.highlight}>Celebrate Ariana Grande's Birthday!</span>
-              </div>
-            </div>
+            </a>
           </li>
         </ul>
         <p>Subscribe to notifications for updates on new show dates!
