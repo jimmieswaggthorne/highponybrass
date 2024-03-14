@@ -11,6 +11,7 @@ const ShowList = () => {
         <p>We are excited to be kicking this show off local to Chicago before expanding to other cities in the midwest! Check out some of the dates we currently have planned below.</p>
         <ul className={styles.list}>
           <li>
+            <a href="https://ticketscandy.com/e/high-pony-brass-4438" target="_blank">
             <div className={styles.show}>
               <div className={styles.location}>
                 <h3>Three Brothers Theatre</h3>
@@ -19,9 +20,10 @@ const ShowList = () => {
                 Waukegan, IL
               </div>
               <div className={styles.date}>
-                April 13th (Time TBA)
+                April 13th at 7:00PM <span className={styles.highlight}>All Ages Welcome!</span>
               </div>
             </div>
+              </a>
           </li>
           <li>
             <div className={styles.show}>
