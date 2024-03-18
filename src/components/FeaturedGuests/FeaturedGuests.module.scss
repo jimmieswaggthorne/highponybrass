@@ -11,6 +11,11 @@
   color: white;
   overflow-x: hidden;
 
+
+  @include Phone {
+    justify-content: flex-end;
+  }
+
   h2,
   h1 {
     @include DesktopXL {
@@ -20,10 +25,41 @@
     text-align: center;
   }
 
+  h2,
+  h1,
+  p {
+    @include Phone {
+      background-color: rgba($pink, .7);
+      border-radius: 8px;
+    }
+  }
+
+  p {
+    padding: 16px;
+  }
+
   @include DesktopXL {
     width: 50%;
   }
 }
+
+.thorne {
+  @include DefaultMin;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  @include ThorneBackground;
+  padding: 60px 30px;
+
+  @include Phone {
+    padding: 16px;
+    width: 100vw
+  }
+}
+
 
 .mandyn {
   @include DefaultMin;
@@ -42,6 +78,39 @@
   }
 }
 
+.david {
+  @include DefaultMin;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  @include DavidBackground;
+  padding: 60px 30px;
+
+  @include Phone {
+    padding: 16px;
+    width: 100vw
+  }
+}
+
+.kenzie {
+  @include DefaultMin;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  @include KenzieBackground;
+  padding: 60px 30px;
+
+  @include Phone {
+    padding: 16px;
+    width: 100vw
+  }
+}
 
 .graham {
   @include DefaultMin;
