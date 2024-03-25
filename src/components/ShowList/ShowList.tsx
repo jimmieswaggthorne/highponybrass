@@ -50,7 +50,7 @@ const ShowList = () => {
                   Chicago, IL
                 </div>
                 <div className={styles.date}>
-                  April 26th at 7PM <span className={styles.highlight}>Celebrate Ariana Grande's Birthday!</span>
+                  June 26th at 7PM <span className={styles.highlight}>Celebrate Ariana Grande's Birthday!</span>
                 </div>
               </div>
             </a>
