@@ -33,7 +33,7 @@ const HomePage = () => {
       </div>
       <ShowList />
       {/* <FeaturedGuests /> */}
-      {/* <Sponsors /> */}
+      <Sponsors />
     </div>
   )
 }
