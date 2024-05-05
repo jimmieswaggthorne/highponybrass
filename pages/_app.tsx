@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Script id="signupVariable">
         {'var _ctct_m="1b34bf71bd3edae68471d7995adbe72a";'}
       </Script>
-      <Script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></Script>
+      {/* <Script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></Script> */}
     </>
   )
 }
