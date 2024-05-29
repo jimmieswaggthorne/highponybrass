@@ -11,6 +11,8 @@ const Sponsors = () => {
             <a href="https://www.genitophoto.com/" target="_blank">
               <img src="/images/genito.png" />
             </a>
+          </div>
+          <div className={styles.logo}>
             <a href="https://queercoded.events/" target="_blank">
               <img src="/images/qc-logo.png" />
             </a>
