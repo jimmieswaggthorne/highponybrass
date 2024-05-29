@@ -10,7 +10,7 @@ const ShowList = () => {
         <h2>Upcoming Shows</h2>
         <p>We are excited to be kicking this show off local to Chicago before expanding to other cities in the midwest! Check out some of the dates we currently have planned below.</p>
         <ul className={styles.list}>
-          <li>
+          {/* <li>
             <a href="https://ticketscandy.com/e/high-pony-brass-4438" target="_blank">
               <div className={styles.show}>
                 <div className={styles.location}>
@@ -24,7 +24,7 @@ const ShowList = () => {
                 </div>
               </div>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="https://www.eventbrite.com/e/high-pony-brass-tickets-863313202027" target="_blank">
               <div className={styles.show}>
