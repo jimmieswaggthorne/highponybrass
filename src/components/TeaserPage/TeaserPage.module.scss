@@ -10,7 +10,8 @@
   position: relative;
   overflow: hidden;
   border-bottom: 2px solid white;
-  @include DefaultMin;
+  // @include DefaultMin;
+  aspect-ratio: 16/9;
 
   @include Desktop {
     box-sizing: border-box;
@@ -46,5 +47,23 @@
     @include Desktop {
       width: 100vw;
     }
+
+    @include TransitionQuick;
+
+    &Promo {
+      @include NoSelect;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      @include TransitionQuick;
+
+      @include Desktop {
+        width: 100vw;
+      }
+    }
   }
+
 }
