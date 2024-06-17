@@ -29,7 +29,10 @@ const ShowList = () => {
             {/* <a href="https://www.eventbrite.com/e/high-pony-brass-tickets-863313202027" target="_blank"> */}
             <div className={styles.show}>
               <div className={styles.location}>
-                <h3>Newport Theater</h3><small>(cancelled)</small>
+                <h3>Newport Theater &nbsp;
+                  <small><span className={styles.highlight}>cancelled</span></small>
+                </h3>
+
               </div>
               <div className={styles.city}>
                 Chicago, IL
@@ -44,8 +47,9 @@ const ShowList = () => {
             {/* <a href="https://ticketscandy.com/e/high-pony-brass-arianas-birthday-edition-4439" target="_blank"> */}
             <div className={styles.show}>
               <div className={styles.location}>
-                <h3>The Baton Show Lounge</h3>
-                <small>(cancelled)</small>
+                <h3>The Baton Show Lounge&nbsp;
+                  <small><span className={styles.highlight}>cancelled</span></small>
+                </h3>
               </div>
               <div className={styles.city}>
                 Chicago, IL
