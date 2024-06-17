@@ -8,7 +8,7 @@ const ShowList = () => {
 
       <div className={styles.body}>
         <h2>Upcoming Shows</h2>
-        <p>We are excited to be kicking this show off local to Chicago before expanding to other cities in the midwest! Check out some of the dates we currently have planned below.</p>
+        <p>Due to some of the artists contracting COVID, we will be rescheduling our June shows. Please stay tuned for future updates!</p>
         <ul className={styles.list}>
           {/* <li>
             <a href="https://ticketscandy.com/e/high-pony-brass-4438" target="_blank">
@@ -26,34 +26,35 @@ const ShowList = () => {
             </a>
           </li> */}
           <li>
-            <a href="https://www.eventbrite.com/e/high-pony-brass-tickets-863313202027" target="_blank">
-              <div className={styles.show}>
-                <div className={styles.location}>
-                  <h3>Newport Theater</h3>
-                </div>
-                <div className={styles.city}>
-                  Chicago, IL
-                </div>
-                <div className={styles.date}>
-                  June 22nd at 9:30PM
-                </div>
+            {/* <a href="https://www.eventbrite.com/e/high-pony-brass-tickets-863313202027" target="_blank"> */}
+            <div className={styles.show}>
+              <div className={styles.location}>
+                <h3>Newport Theater</h3><small>(cancelled)</small>
               </div>
-            </a>
+              <div className={styles.city}>
+                Chicago, IL
+              </div>
+              <div className={styles.date}>
+                June 22nd at 9:30PM
+              </div>
+            </div>
+            {/* </a> */}
           </li>
           <li>
-            <a href="https://ticketscandy.com/e/high-pony-brass-arianas-birthday-edition-4439" target="_blank">
-              <div className={styles.show}>
-                <div className={styles.location}>
-                  <h3>The Baton Show Lounge</h3>
-                </div>
-                <div className={styles.city}>
-                  Chicago, IL
-                </div>
-                <div className={styles.date}>
-                  June 26th at 7PM <span className={styles.highlight}>Celebrate Ariana Grande's Birthday!</span>
-                </div>
+            {/* <a href="https://ticketscandy.com/e/high-pony-brass-arianas-birthday-edition-4439" target="_blank"> */}
+            <div className={styles.show}>
+              <div className={styles.location}>
+                <h3>The Baton Show Lounge</h3>
+                <small>(cancelled)</small>
               </div>
-            </a>
+              <div className={styles.city}>
+                Chicago, IL
+              </div>
+              <div className={styles.date}>
+                June 26th at 7PM <span className={styles.highlight}>Celebrate Ariana Grande's Birthday!</span>
+              </div>
+            </div>
+            {/* </a> */}
           </li>
         </ul>
         <p>Subscribe to notifications for updates on new show dates!
