@@ -26,22 +26,22 @@ const ShowList = () => {
             </a>
           </li> */}
           <li>
-            {/* <a href="https://www.eventbrite.com/e/high-pony-brass-tickets-863313202027" target="_blank"> */}
-            <div className={styles.show}>
-              <div className={styles.location}>
-                <h3>Newport Theater &nbsp;
-                  <small><span className={styles.highlight}>cancelled</span></small>
-                </h3>
+            <a href="https://www.eventbrite.com/e/high-pony-brass-tickets-863313202027" target="_blank">
+              <div className={styles.show}>
+                <div className={styles.location}>
+                  <h3>Newport Theater &nbsp;
 
+                  </h3>
+
+                </div>
+                <div className={styles.city}>
+                  Chicago, IL
+                </div>
+                <div className={styles.date}>
+                  August 23rd at 9:30PM
+                </div>
               </div>
-              <div className={styles.city}>
-                Chicago, IL
-              </div>
-              <div className={styles.date}>
-                June 22nd at 9:30PM
-              </div>
-            </div>
-            {/* </a> */}
+            </a>
           </li>
           <li>
             {/* <a href="https://ticketscandy.com/e/high-pony-brass-arianas-birthday-edition-4439" target="_blank"> */}
