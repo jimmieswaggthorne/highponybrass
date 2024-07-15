@@ -8,7 +8,8 @@ const ShowList = () => {
 
       <div className={styles.body}>
         <h2>Upcoming Shows</h2>
-        <p>Due to some of the artists contracting COVID, we will be rescheduling our June shows. Please stay tuned for future updates!</p>
+        <p>We are excited to bring this show to Chicago before expanding to other cities in the midwest! Check out some of the dates we currently have planned below.</p>
+
         <ul className={styles.list}>
           {/* <li>
             <a href="https://ticketscandy.com/e/high-pony-brass-4438" target="_blank">
