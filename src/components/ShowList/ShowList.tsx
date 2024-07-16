@@ -46,7 +46,7 @@ const ShowList = () => {
           </li>
           <li>
             {/* <a href="https://ticketscandy.com/e/high-pony-brass-arianas-birthday-edition-4439" target="_blank"> */}
-            <div className={styles.show}>
+            {/* <div className={styles.show}>
               <div className={styles.location}>
                 <h3>The Baton Show Lounge&nbsp;
                   <small><span className={styles.highlight}>cancelled</span></small>
@@ -58,7 +58,7 @@ const ShowList = () => {
               <div className={styles.date}>
                 June 26th at 7PM <span className={styles.highlight}>Celebrate Ariana Grande's Birthday!</span>
               </div>
-            </div>
+            </div> */}
             {/* </a> */}
           </li>
         </ul>
